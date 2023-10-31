@@ -1,6 +1,4 @@
-import express from express;
-const app = express();
-const port = 3000;
+
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
 
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
@@ -80,6 +78,3 @@ function buttonAnimation(currentKey) {
   }, 100);
 
 }
-app.listen(port,()=>{
-  console.log(`Server is running on port ${port} `);
- });
